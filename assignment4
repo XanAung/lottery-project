@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day12-assignment</title>
+    <style>
+        form {
+            display: inline;
+        }
+
+        body {
+            background-color: #999;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <span>
+        <input id="username" type="text" placeholder="Name"><br>
+        <input id="phnumber" type="text" placeholder="Phone Number"><br>
+        <input id="lknumber" type="text" placeholder="Lucky Number"><br>
+        <button>Submit</button>
+    </span>
+    <span>
+        <div id="name"></div>
+        <div id="phnum"></div>
+        <div id="lknum"></div>
+    </span>
+    <table id="table" border="1">
+        <tr class="row">
+            <th colspan="4">000 => 099</th>
+            <th colspan="4">100 => 199</th>
+            <th colspan="4">200 => 299</th>
+            <th colspan="4">300 => 399</th>
+            <th colspan="4">400 => 499</th>
+            <th colspan="4">500 => 599</th>
+            <th colspan="4">600 => 699</th>
+            <th colspan="4">700 => 799</th>
+            <th colspan="4">800 => 899</th>
+            <th colspan="4">900 => 999</th>
+        </tr>
+        <tr class="row">
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr class="row">
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+        <tr>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="one"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="two"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="three"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="four"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="five"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="six"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="seven"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="eight"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="nine"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+            <td class="ten"></td>
+        </tr>
+    </table>
+
+    <script>
+        let userName = document.getElementById('username');
+        let phNumber = document.getElementById('phnumber');
+        let luckyNumber = document.getElementById('lknumber');
+        let submit = document.querySelector('button');
+
+        let arr = []; // main array
+
+
+        for(let i = 0; i < 1000; i++) { // append (0 to 999) to array
+            arr[i] = i;
+        }
+
+        for(let i = arr[0]; i < arr[10]; i++) { // concat arr[0-9] with "00" 
+            arr[i] = '00' + i;
+        }
+
+        for(let j = arr[10]; j < arr[100]; j++) { // concat arr[10 - 99] with "0"
+            arr[j] = '0' + j;
+        }
+
+        for(let k = arr[100]; k <= arr[999]; k++) { // concat arr[100 - 999] with "" (empty string)
+            arr[k] = k + '';
+        }
+
+        let length = 0; 
+        for(let el in arr) { // instead of using arr.length, we use this:
+            length++;
+        }
+
+            let one = document.getElementsByClassName('one');
+            let two = document.getElementsByClassName('two');
+            let three = document.getElementsByClassName('three');
+            let four = document.getElementsByClassName('four');
+            let five = document.getElementsByClassName('five');
+            let six = document.getElementsByClassName('six');
+            let seven = document.getElementsByClassName('seven');
+            let eight = document.getElementsByClassName('eight');
+            let nine = document.getElementsByClassName('nine');
+            let ten = document.getElementsByClassName('ten');
+
+            let oneStart = 0;
+            let twoStart = 100;
+            let threeStart = 200;
+            let fourStart = 300;
+            let fiveStart = 400;
+            let sixStart = 500;
+            let sevenStart = 600;
+            let eightStart = 700;
+            let nineStart = 800;
+            let tenStart = 900;
+
+            function myFun(row, start) { // create reuse function
+                for(let i = 0; i < row.length; i++) {
+                    row[i].innerHTML = arr[start];
+                    start++;
+                }
+            }
+            myFun(one, oneStart);
+            myFun(two, twoStart);
+            myFun(three, threeStart);
+            myFun(four, fourStart);
+            myFun(five, fiveStart);
+            myFun(six, sixStart);
+            myFun(seven, sevenStart);
+            myFun(eight, eightStart);
+            myFun(nine, nineStart);
+            myFun(ten, tenStart);
+
+        submit.addEventListener('click', submitFun);
+let spanName = document.getElementById('name');
+let spanPhnum = document.getElementById('phnum');
+let spanLknum = document.getElementById('lknum');
+let row = document.getElementsByClassName('row');
+        function submitFun() {
+            let newArr = [...arr];
+            for(let i = 0; i < length; i++) {
+                if(luckyNumber.value + '' === arr[i]) {
+                    arr[i] = '';
+                }
+            }
+            spanName.innerHTML = userName.value;
+            spanPhnum.innerHTML = phNumber.value;
+            spanLknum.innerHTML = luckyNumber.value;
+            console.log(arr);
+        }
+
+        
+    </script>
+</body>
+</html>
